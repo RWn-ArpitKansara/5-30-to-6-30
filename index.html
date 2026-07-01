@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *
-        {
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        div
-        {
-            height: 100vh;
-            width: 50%;
-            margin: auto;
-            background-color: black;
-            border: 3px solid greenyellow;
-            border-radius: 50%;
-        }
+      .box1
+      {
+        height: 350px;
+        width: 350px;
+        background-color: yellow;
+        /* display: none; */
+        display: inline-block;
+        visibility: hidden;
+
+      }
+      .box2
+      {
+         height: 350px;
+        width: 350px;
+        background-color: aqua;
+        display: inline-block;
+      }
     </style>
 </head>
 <body>
-    <div>
+    <!-- display : inline, block, inlineblock, none -->
 
-    </div>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+
 </body>
 </html>
