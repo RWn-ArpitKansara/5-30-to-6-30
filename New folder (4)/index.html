@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .mobile
+       {
+            height: 60px;
+            width: 100%;
+            background-color: aqua;
+            visibility: hidden;
+       }
+       .laptop
+       {
+            height: 60px;
+            width: 100%;
+            background-color: yellow;
+            visibility: hidden;
+       }
+       .computer
+       {
+            height: 60px;
+            width: 100%;
+            background-color: orangered;
+            visibility: hidden;
+       }
+
+       @media (max-width:480px)
+       {
+            .mobile
+            {
+                height: 60px;
+                width: 100%;
+                background-color: aqua;
+                visibility: visible;
+            }
+       }
+
+       @media (min-width:481px) and (max-width:760px)
+       {
+            .mobile
+            {
+                height: 60px;
+                width: 100%;
+                background-color: aqua;
+                visibility: visible;
+            }
+            .laptop
+            {
+                height: 60px;
+                width: 100%;
+                background-color: yellow;
+                visibility: visible;
+            }
+       }
+
+       @media (min-width:761px) and (max-width:1920px)
+       {
+            .mobile
+            {
+                height: 60px;
+                width: 100%;
+                background-color: aqua;
+                visibility: visible;
+            }
+            .laptop
+            {
+                height: 60px;
+                width: 100%;
+                background-color: yellow;
+                visibility: visible;
+            }
+             .computer
+            {
+                height: 60px;
+                width: 100%;
+                background-color: orangered;
+                visibility: visible;
+            }
+       }
+
+    </style>
+</head>
+<body>
+    
+    <div class="mobile">mobile</div>
+    <div class="laptop">laptop</div>
+    <div class="computer">Computer</div>
+
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner
+        {
+            height: 500px;
+            width: 80%;
+            border: 2px solid black;
+            background-color: lightgreen;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box
+        {
+            height: 300px;
+            width: 32%;
+            background-color: orangered;
+        }
+
+        @media (max-width:480px)
+        {
+            .banner
+        {
+            height: 800px;
+            width: 80%;
+            border: 2px solid black;
+            background-color: lightgreen;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+           .box
+        {
+            height: 300px;
+            width: 80%;
+            margin: 20px 0px;
+            background-color: orangered;
+        }
+        }
+
+        @media (max-width:760px)
+        {
+            .banner
+            {
+                  height: 800px;
+                width: 80%;
+                border: 2px solid black;
+                background-color: lightgreen;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box
+            {
+                height: 300px;
+                width: 48%;
+                margin: 20px auto;
+                background-color: orangered;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="banner">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
